@@ -1,0 +1,138 @@
+I  foo  FUNCTION
+New scope table with id1 created.
+
+Not Found
+
+Inserted in scope table #1 at (1, 0)  position.
+
+I  i  VAR
+Not Found
+
+Inserted in scope table #1 at (0, 0)  position.
+
+L  foo
+Found in scope table #1at (1, 0)  position.
+
+L  j
+Not Found
+
+I  5  NUMBER
+Not Found
+
+Inserted in scope table #1 at (4, 0)  position.
+
+P  A
+ScopeTable# 1
+0 -->  <i : VAR>   
+1 -->  <foo : FUNCTION>   
+2 -->  
+3 -->  
+4 -->  <5 : NUMBER>   
+5 -->  
+6 -->  
+D  j
+Not Found
+
+j Doesn't Exist....
+
+D  i
+Found in scope table #1at (0, 0)  position.
+
+Deleted entry at (0,0) from the current scope.
+
+P  A
+ScopeTable# 1
+0 -->  
+1 -->  <foo : FUNCTION>   
+2 -->  
+3 -->  
+4 -->  <5 : NUMBER>   
+5 -->  
+6 -->  
+S  
+New scope table with id2 created.
+
+I  <=  RELOP
+Not Found
+
+Inserted in scope table #2 at (3, 0)  position.
+
+I  ==  RELOP
+Not Found
+
+Inserted in scope table #2 at (0, 0)  position.
+
+P  A
+ScopeTable# 2
+0 -->  <== : RELOP>   
+1 -->  
+2 -->  
+3 -->  <<= : RELOP>   
+4 -->  
+5 -->  
+6 -->  
+ScopeTable# 1
+0 -->  
+1 -->  <foo : FUNCTION>   
+2 -->  
+3 -->  
+4 -->  <5 : NUMBER>   
+5 -->  
+6 -->  
+I  <=  RELOP
+Found in scope table #2at (3, 0)  position.
+
+<= Already Exists....
+
+I  foo  FUNCTION
+Not Found
+
+Inserted in scope table #2 at (1, 0)  position.
+
+D  ==
+Found in scope table #2at (0, 0)  position.
+
+Deleted entry at (0,0) from the current scope.
+
+P  A
+ScopeTable# 2
+0 -->  
+1 -->  <foo : FUNCTION>   
+2 -->  
+3 -->  <<= : RELOP>   
+4 -->  
+5 -->  
+6 -->  
+ScopeTable# 1
+0 -->  
+1 -->  <foo : FUNCTION>   
+2 -->  
+3 -->  
+4 -->  <5 : NUMBER>   
+5 -->  
+6 -->  
+E  
+Scope table with id2 removed.
+
+I  t  t
+Not Found
+
+Inserted in scope table #1 at (4, 0)  position.
+
+I  k  k
+Not Found
+
+Inserted in scope table #1 at (2, 0)  position.
+
+P  A
+ScopeTable# 1
+0 -->  
+1 -->  <foo : FUNCTION>   
+2 -->  <k : k>   
+3 -->  
+4 -->  <5 : NUMBER>   <t : t>   
+5 -->  
+6 -->  
+L  t
+Found in scope table #1at (4, 1)  position.
+
